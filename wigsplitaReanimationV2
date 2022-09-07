@@ -14,7 +14,7 @@ connections[#connections+1] = game:GetService("RunService").RenderStepped:Connec
 	setsimulationradius(math.huge)
 end)
 function SendNotification(s)
-	game.StarterGui:SetCore("SendNotification",{Title="Plusgiant5's Reanimation V2",Text=s})
+	game.StarterGui:SetCore("SendNotification",{Title="wigsplita's Reanimation V2",Text=s})
 end
 local plr = game.Players.LocalPlayer
 local char = plr.Character
@@ -110,7 +110,7 @@ SendNotification("Reanimating "..rig)
 
 
 
---Converted with ttyyuu12345's model to script plugin v4 (Edited by greeny2340)
+
 function sandbox(var,func)
 	local env = getfenv(func)local newenv = setmetatable({},{__index = function(self,k)if k=="script" then return var else return env[k] end end, }) setfenv(func,newenv)return func
 end
